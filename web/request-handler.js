@@ -5,12 +5,12 @@ var helpers = require('./http-helpers');
 var fs = require('fs');
 
 exports.handleRequest = function (req, res) {
+ 
   if (req.method === 'GET') {
-    
+    //console.log('TESTING 123', req.url);
     var url;
     if (req.url === '/') {
       url = '/index.html';
-      
     }
   }
   helpers.serveAssets(res, url);
